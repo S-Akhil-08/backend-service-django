@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Approved – {{ project_name }}</title>
+</head>
+
+<body style="margin:0; padding:0; width:100%; font-family:Arial, sans-serif; color:#333; line-height:1.6;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background:#ffffff;">
+    <tr>
+        <td style="padding:0;">
+
+            <!-- Header -->
+            <div style="background:#111827; color:#ffffff; padding:20px;">
+                <h2 style="margin:0;">
+                    Hey {{ name }} 🎉
+                </h2>
+                <p style="margin:5px 0 0 0;">
+                    Big news — your feedback just went public 😄
+                </p>
+            </div>
+
+            <!-- Body -->
+            <div style="padding:20px;">
+
+                <p style="margin:0 0 10px 0;">
+                    Great news! Your feedback on the
+                    <strong>{{ project_name }}</strong> modeling project has been
+                    <strong>reviewed and approved</strong> ✅
+                </p>
+
+                <p style="margin:0 0 15px 0;">
+                    It’s now proudly displayed on our platform and helping others
+                    make better modeling decisions 🚀
+                </p>
+
+                <p style="margin:0 0 5px 0;"><strong>Your published feedback:</strong></p>
+
+                <ul style="margin:0 0 15px 20px; padding:0;">
+                    <li>💡 <strong>Thoughts:</strong> {{ feedback_text }}</li>
+                    <li>⭐ <strong>Rating:</strong> {{ rating }}</li>
+                    <li>😊 <strong>Vibes:</strong> {{ emojis }}</li>
+                </ul>
+
+                <p style="margin:0 0 15px 0;">
+                    Yep — your review is now live on our homepage and already
+                    making an impact 🙌
+                </p>
+
+                <!-- CTA Button -->
+                <div style="margin:20px 0;">
+                    <a href="{{ homepage_url }}" target="_blank"
+                       style="
+                       display:inline-block;
+                       background:#2563eb;
+                       color:#ffffff;
+                       text-decoration:none;
+                       padding:12px 20px;
+                       border-radius:6px;
+                       font-weight:bold;
+                       ">
+                        🚀 View It on Homepage
+                    </a>
+                </div>
+
+                <p style="margin:0 0 15px 0; font-size:14px; color:#555;">
+                    Thanks for sharing honest feedback — it genuinely helps us
+                    build better models and a stronger community 💙
+                </p>
+
+                <p style="margin:0;">
+                    Cheers,<br>
+                    <strong>{{ name }}</strong> 😄<br>
+                    <span style="font-size:13px; color:#666;">
+                        Building cool models at XXXX
+                    </span>
+                </p>
+
+            </div>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
